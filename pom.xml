@@ -12,6 +12,7 @@
         <module>excavate_common</module>
         <module>excavate_domian</module>
     </modules>
+
     <properties>
         <spring.version>4.3.5.RELEASE</spring.version>
         <hibernate.version>5.0.1.Final</hibernate.version>
