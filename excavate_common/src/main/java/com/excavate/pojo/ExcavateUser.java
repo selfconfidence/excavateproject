@@ -1,8 +1,9 @@
 package com.excavate.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ExcavateUser {
+public class ExcavateUser implements Serializable {
     private String id;
 
     private String userName;
