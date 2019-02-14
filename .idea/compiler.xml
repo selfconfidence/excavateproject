@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="excavate-common" />
+        <module name="excavate_base" />
         <module name="excavate_domian" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="excavate-common" target="1.8" />
+      <module name="excavate_base" target="1.8" />
       <module name="excavate_domian" target="1.8" />
       <module name="excavateParent" target="1.5" />
     </bytecodeTargetLevel>

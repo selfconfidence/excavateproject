@@ -1,7 +1,7 @@
 package com.excavate.database;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import com.excavate.utils.com.excavate.utils.Base64Utils;
+import com.excavate.utils.Base64Utils;
 
 public class MysqlDataSource extends DruidDataSource {
 
@@ -19,13 +19,13 @@ public class MysqlDataSource extends DruidDataSource {
 
     @Override
     public void setPassword(String password) {
-        String newPassword = null;
+      /*  String newPassword = null;
         try {
             newPassword = Base64Utils.decode(password);
         }catch (Exception e){
             e.printStackTrace();
-        }
-        super.setPassword(newPassword);
+        }*/
+        super.setPassword(password);
     }
      /* public static void main(String[] args) {
         //数据库账号密码!
