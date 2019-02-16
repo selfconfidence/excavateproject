@@ -3,7 +3,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
-   <!--log4j的初始化参数-->
+   <!--&lt;!&ndash;log4j的初始化参数&ndash;&gt;
     <servlet>
         <servlet-name>log4j-init</servlet-name>
         <servlet-class>com.excavate.init.InitLog4j</servlet-class>
@@ -12,7 +12,7 @@
             <param-value>../resources/config\log4j.properties</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
-    </servlet>
+    </servlet>-->
 
     <!-- 配置加载全局配置文件 配置 -->
     <context-param>

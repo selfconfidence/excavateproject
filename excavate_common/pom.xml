@@ -10,6 +10,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>excavate-common</artifactId>
-
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <maven.app-name>${app-name}</maven.app-name>
+                <maven.config-home>${project.build.directory}/../config/dev</maven.config-home>
+                <maven.log-level>${project.build.directory}/../logs</maven.log-level>
+            </properties>
+        </profile>
+        <profile>
+            <id>uat</id>
+            <properties>
+            <maven.app-name>${app-name}</maven.app-name>
+            <maven.config-home>liunx绝对路径</maven.config-home>
+            <maven.log-level>liunx绝对路径</maven.log-level>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>
