@@ -21,7 +21,7 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
-<!--全局一场处理器！-->
+<!--全局异常处理器！-->
     <bean id="excavateExceptionInterceptor" class="com.excavate.exception.ExcavateExceptionInterceptor"></bean>
 
 
