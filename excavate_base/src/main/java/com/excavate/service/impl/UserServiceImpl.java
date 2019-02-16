@@ -7,6 +7,7 @@ import com.excavate.utils.Base64Utils;
 import com.excavate.utils.IdWorker;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
  * @create 2019年02月16号:22点38分
  * @mailbox mynameisweiyan@gmail.com
  */
+@Service
 @Transactional(rollbackFor = {Exception.class})
 public class UserServiceImpl implements UserService {
     @Autowired
