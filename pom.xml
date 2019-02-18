@@ -333,6 +333,13 @@
     </dependencies>
     </dependencyManagement>
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <finalName>excavate</finalName>
         <pluginManagement>
             <plugins>

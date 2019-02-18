@@ -80,7 +80,7 @@
     id, user_name, password, true_name, user_portrait_img, gender, age, address, mail, 
     create_time, update_time, brithday, source_type, user_status, telephone
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.excavate.example.ExcavateUserExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.excavate.pojo.ExcavateUserExample" >
     select
     <if test="distinct" >
       distinct
@@ -104,7 +104,7 @@
     delete from excavate_user
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <delete id="deleteByExample" parameterType="com.excavate.example.ExcavateUserExample" >
+  <delete id="deleteByExample" parameterType="com.excavate.pojo.ExcavateUserExample" >
     delete from excavate_user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -221,7 +221,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.excavate.example.ExcavateUserExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.excavate.pojo.ExcavateUserExample" resultType="java.lang.Integer" >
     select count(*) from excavate_user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />

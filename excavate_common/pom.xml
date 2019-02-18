@@ -25,11 +25,10 @@
         <profile>
             <id>uat</id>
             <properties>
-            <maven.app-name>${app-name}</maven.app-name>
-            <maven.config-home>liunx绝对路径</maven.config-home>
-            <maven.log-level>liunx绝对路径</maven.log-level>
+                <maven.app-name>${app-name}</maven.app-name>
+                <maven.config-home>liunx绝对路径</maven.config-home>
+                <maven.log-level>liunx绝对路径</maven.log-level>
             </properties>
         </profile>
     </profiles>
-
-</project>
+    </project>

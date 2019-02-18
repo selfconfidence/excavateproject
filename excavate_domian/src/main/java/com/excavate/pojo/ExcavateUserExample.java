@@ -1,4 +1,4 @@
-package com.excavate.example;
+package com.excavate.pojo;
 
 import java.util.ArrayList;
 import java.util.Date;

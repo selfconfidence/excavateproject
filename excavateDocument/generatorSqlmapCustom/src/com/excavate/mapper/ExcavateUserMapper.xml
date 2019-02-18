@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.excavate.mapper.ExcavateUserMapper" >
-  <resultMap id="BaseResultMap" type="com.excavate.pojo.ExcavateUser" >
+  <resultMap id="BaseResultMap" type="ExcavateUser" >
     <id column="id" property="id" jdbcType="VARCHAR" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
@@ -80,7 +80,7 @@
     id, user_name, password, true_name, user_portrait_img, gender, age, address, mail, 
     create_time, update_time, brithday, source_type, user_status, telephone
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.excavate.pojo.ExcavateUserExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="ExcavateUserExample" >
     select
     <if test="distinct" >
       distinct
@@ -104,13 +104,13 @@
     delete from excavate_user
     where id = #{id,jdbcType=VARCHAR}
   </delete>
-  <delete id="deleteByExample" parameterType="com.excavate.pojo.ExcavateUserExample" >
+  <delete id="deleteByExample" parameterType="ExcavateUserExample" >
     delete from excavate_user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.excavate.pojo.ExcavateUser" >
+  <insert id="insert" parameterType="ExcavateUser" >
     insert into excavate_user (id, user_name, password, 
       true_name, user_portrait_img, gender, 
       age, address, mail, 
@@ -124,7 +124,7 @@
       #{sourceType,jdbcType=VARCHAR}, #{userStatus,jdbcType=VARCHAR}, #{telephone,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.excavate.pojo.ExcavateUser" >
+  <insert id="insertSelective" parameterType="ExcavateUser" >
     insert into excavate_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -221,7 +221,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.excavate.pojo.ExcavateUserExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="ExcavateUserExample" resultType="java.lang.Integer" >
     select count(*) from excavate_user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -301,7 +301,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.excavate.pojo.ExcavateUser" >
+  <update id="updateByPrimaryKeySelective" parameterType="ExcavateUser" >
     update excavate_user
     <set >
       <if test="userName != null" >
@@ -349,7 +349,7 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.excavate.pojo.ExcavateUser" >
+  <update id="updateByPrimaryKey" parameterType="ExcavateUser" >
     update excavate_user
     set user_name = #{userName,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},

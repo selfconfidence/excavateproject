@@ -1,6 +1,6 @@
 package com.excavate.mapper;
 
-import com.excavate.example.ExcavateUserExample;
+import com.excavate.pojo.ExcavateUserExample;
 import com.excavate.pojo.ExcavateUser;
 import org.apache.ibatis.annotations.Param;
 

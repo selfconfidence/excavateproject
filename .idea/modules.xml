@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/excavate_common/excavate-common.iml" filepath="$PROJECT_DIR$/excavate_common/excavate-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/excavateParent.iml" filepath="$PROJECT_DIR$/excavateParent.iml" />
       <module fileurl="file://$PROJECT_DIR$/excavate_base/excavate_base.iml" filepath="$PROJECT_DIR$/excavate_base/excavate_base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/excavate_base/excavate_base.iml" filepath="$PROJECT_DIR$/excavate_base/excavate_base.iml" />
       <module fileurl="file://$PROJECT_DIR$/excavate_domian/excavate_domian.iml" filepath="$PROJECT_DIR$/excavate_domian/excavate_domian.iml" />
     </modules>
   </component>
