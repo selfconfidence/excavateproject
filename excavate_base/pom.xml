@@ -12,9 +12,9 @@
 
     <artifactId>excavate_base</artifactId>
 
-    <name>Camel Router Application</name>
-  <description>Camel project that deploys the Camel Web Console, REST API, and your routes as a WAR</description>
-  <url>http://www.myorganization.org</url>
+    <name>excavate_base</name>
+  <description>excavate-project-webroot</description>
+  <url>http://localhost:8080</url>
   
   <packaging>war</packaging>
 
