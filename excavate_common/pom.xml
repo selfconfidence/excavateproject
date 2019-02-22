@@ -41,6 +41,24 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-jdbc</artifactId>
     </dependency>
+        <!--关于日志信息-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
        </dependencies>
 <artifactId>excavate-common</artifactId>
     <profiles>
@@ -52,7 +70,9 @@
             <properties>
                 <maven.app-name>${app-name}</maven.app-name>
                 <maven.config-home>${project.build.directory}/../config/dev</maven.config-home>
-                <maven.log-level>${project.build.directory}/../logs</maven.log-level>
+                <maven.log-home>${project.build.directory}/../logs</maven.log-home>
+                <maven.log-level>INFO</maven.log-level>
+                <maven.sql-log>DEBUG</maven.sql-log>
             </properties>
         </profile>
         <profile>
@@ -60,7 +80,9 @@
             <properties>
                 <maven.app-name>${app-name}</maven.app-name>
                 <maven.config-home>liunx绝对路径</maven.config-home>
-                <maven.log-level>liunx绝对路径</maven.log-level>
+                <maven.log-home></maven.log-home>
+                <maven.log-level>INFO</maven.log-level>
+                <maven.sql-log>INFO</maven.sql-log>
             </properties>
         </profile>
     </profiles>
